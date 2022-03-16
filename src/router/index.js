@@ -3,14 +3,17 @@ const index = () => import("../pages/index.vue");
 const routerHistory = createWebHashHistory();
 const router = createRouter({
   history: routerHistory,
-  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
       name: "index",
       redirect: "/index",
-      component: index,
     },
+    {
+      path:'/index',
+      name:'home',
+      component: index
+    }
   ],
 });
 export default router;
