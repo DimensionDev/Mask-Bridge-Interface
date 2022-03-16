@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-const index = () => import("../pages/index.vue");
+const layout = () => import("../pages/layout.vue");
 const routerHistory = createWebHashHistory();
 const router = createRouter({
   history: routerHistory,
@@ -10,10 +10,10 @@ const router = createRouter({
       redirect: "/index",
     },
     {
-      path:'/index',
-      name:'home',
-      component: index
-    }
+      path: "/index",
+      name: "home",
+      component: layout,
+    },
   ],
 });
 export default router;
