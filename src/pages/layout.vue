@@ -1,21 +1,27 @@
 <template>
-  <div>222</div>
+  <div class="box" >
+      <Header />
+      <Hero />
+  </div>
 </template>
 
 <script >
 import { reactive,toRefs,onBeforeMount,onMounted} from 'vue'
+import Header from '../components/header.vue'
+import Hero from '../components/hero.vue'
 export default {
-    name: '',
+    name: 'layout',
+    components:{
+        Header,
+        Hero
+    },
       setup() {
-          console.log('1-开始创建组件-setup')
           const data = reactive({
 
           })
           onBeforeMount(() => {
-              console.log('2.组件挂载页面之前执行----onBeforeMount')
           })
           onMounted(() => {
-              console.log('3.-组件挂载到页面之后执行-------onMounted')
           })
           const refData = toRefs(data);
           return {
@@ -26,4 +32,12 @@ export default {
   };
 </script>
 <style lang='less' scoped>
+.box{
+    max-width: 80rem;
+    min-width: 80rem;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: auto;
+}
 </style>
