@@ -5,6 +5,7 @@
       <div class="title_md_box">
         <div class="title_md">CROSS-CHAIN</div>
         <div class="title_bg">
+            <img src="../assets/btn_bg.png" alt="">
           <div class="text">BRIDGES</div>
         </div>
       </div>
@@ -59,17 +60,17 @@ export default {
         color: #1c68f3;
       }
       .title_bg {
+          width: fit-content;
         position: relative;
-        background: linear-gradient(272.65deg, #0094ff 0.43%, #192cd9 104.94%);
-        border-radius: 4rem;
-        padding: 0.5rem 3rem;
-        width: fit-content;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 1rem;
+        img{
+            width: 21.5rem;
+        }
         .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
           font-size: 3rem;
           letter-spacing: 0.085em;
           color: #ffffff;

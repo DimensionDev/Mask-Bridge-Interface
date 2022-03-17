@@ -3,9 +3,14 @@
     <div class="title">Cross-chain services</div>
     <div class="main_ctx">
       <div class="item" v-for="item in mainItems" :key="item.key">
-        <img :src="item.icon" alt="" />
+        <img class="chain_icon" :src="item.icon" alt="" />
         <div class="ctx">
-          <div class="ctx_title"></div>
+          <div v-if="item.key == 0" class="ctx_title">ETH Polygon</div>
+          <div v-else class="ctx_title">cBridge Multichain Services</div>
+          <div class="ctx_des">{{ item.des }}</div>
+          <div class="ctx_arrow">
+            <img src="../assets/arrow.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -21,12 +26,12 @@ export default {
       mainItems: [
         {
           key: 0,
-          icon: new URL("../assets/item0.png", import.meta.url),
+          icon: new URL("../assets/item0.svg", import.meta.url),
           des: "To bridge between ETH and Polygon Chain, click to go to Polygon Bridge.",
         },
         {
           key: 1,
-          icon: new URL("../assets/item1.png", import.meta.url),
+          icon: new URL("../assets/item1.svg", import.meta.url),
           des: "To bridge between ETH, BNB Chain, Polygon, Avalanche, etc., click to go to cBridge.",
         },
       ],
@@ -48,16 +53,54 @@ export default {
     font-size: 1.8rem;
     font-weight: bold;
     color: black;
+    margin-bottom: 1.5rem;
   }
   .main_ctx {
     display: flex;
     align-items: center;
+    gap: 1.25rem;
     .item {
-      width: 32.125rem;
-      height: 9.625rem;
+      width: 33rem;
+      height: 10rem;
+      padding: 1.5rem 1rem;
+      box-sizing: border-box;
       background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
       display: flex;
       align-items: flex-start;
+      .chain_icon {
+        width: 3rem;
+        margin-right: 10px;
+      }
+      .ctx {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .ctx_title {
+          font-family: "PingFang SC";
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 2;
+          color: #111432;
+        }
+        .ctx_des {
+          font-family: "PingFang SC";
+          font-weight: 500;
+          font-size: 0.8rem;
+          line-height: 1.5;
+          margin-top: 6px;
+          margin-bottom: 12px;
+          color: #7b8192;
+        }
+        .ctx_arrow {
+          width: 1.3rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

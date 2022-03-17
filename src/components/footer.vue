@@ -19,14 +19,14 @@ export default {
   setup() {
     const data = reactive({
         socialMediaBox:[
-            {key:0,icon: new URL('../assets/media/twitter.png',import.meta.url),link:'' },
-            {key:1,icon: new URL('../assets/media/Telegram.png',import.meta.url),link:'' },
-            {key:2,icon: new URL('../assets/media/discord.png',import.meta.url),link:'' },
-            {key:3,icon: new URL('../assets/media/facebook.png',import.meta.url),link:'' },
-            {key:4,icon: new URL('../assets/media/reddit.png',import.meta.url),link:'' },
-            {key:5,icon: new URL('../assets/media/github.png',import.meta.url),link:'' },
-            {key:6,icon: new URL('../assets/media/Youtube.png',import.meta.url),link:'' },
-            {key:7,icon: new URL('../assets/media/Medium.png',import.meta.url),link:'' },
+            {key:0,icon: new URL('../assets/media/twitter.svg',import.meta.url),link:'' },
+            {key:1,icon: new URL('../assets/media/Telegram.svg',import.meta.url),link:'' },
+            {key:2,icon: new URL('../assets/media/Negative.svg',import.meta.url),link:'' },
+            {key:3,icon: new URL('../assets/media/facebook.svg',import.meta.url),link:'' },
+            {key:4,icon: new URL('../assets/media/reddit.svg',import.meta.url),link:'' },
+            {key:5,icon: new URL('../assets/media/github.svg',import.meta.url),link:'' },
+            {key:6,icon: new URL('../assets/media/Youtube.svg',import.meta.url),link:'' },
+            {key:7,icon: new URL('../assets/media/Medium.svg',import.meta.url),link:'' },
         ]
     });
     onBeforeMount(() => {});

@@ -28,11 +28,7 @@ export default {
 </script>
 <style lang='less' scoped>
 .box {
-  max-width: 80rem;
-  min-width: 80rem;
-  max-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  width: 80rem;
   margin: auto;
 }
 </style>
