@@ -9,7 +9,6 @@
 </template>
 
 <script >
-import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
 import Header from "../components/header.vue";
 import Hero from "../components/hero.vue";
 import Main from "../components/main.vue";
@@ -23,12 +22,16 @@ export default {
     Main,
     Exchange,
     Footer,
-  }
+  },
 };
 </script>
 <style lang='less' scoped>
 .box {
-  width: 80rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75rem;
   margin: auto;
 }
 </style>

@@ -3,13 +3,15 @@
     <div class="title">Cross-chain services</div>
     <div class="main_ctx">
       <div class="item" v-for="item in mainItems" :key="item.key">
-        <img class="chain_icon" :src="item.icon" alt="" />
-        <div class="ctx">
-          <div v-if="item.key == 0" class="ctx_title">ETH Polygon</div>
-          <div v-else class="ctx_title">cBridge Multichain Services</div>
-          <div class="ctx_des">{{ item.des }}</div>
-          <div class="ctx_arrow">
-            <img src="../assets/arrow.png" alt="" />
+        <div class="inner">
+          <img class="chain_icon" :src="item.icon" alt="" />
+          <div class="ctx">
+            <div v-if="item.key == 0" class="ctx_title">ETH Polygon</div>
+            <div v-else class="ctx_title">cBridge Multichain Services</div>
+            <div class="ctx_des">{{ item.des }}</div>
+            <div class="ctx_arrow">
+              <img src="../assets/arrow.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -59,46 +61,58 @@ export default {
   .main_ctx {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.5rem;
     .item {
+      &:hover {
+        background-image: linear-gradient(#fff, #fff),
+          linear-gradient(94.88deg, #27ffd9 1.96%, #4048ff 100%);
+        padding: 2px;
+        background-clip: content-box, padding-box;
+        transition: filter 0.5s ease;
+      }
+      cursor: pointer;
       width: 33rem;
-      height: 10rem;
-      padding: 1.5rem 1rem;
       box-sizing: border-box;
       background: rgba(255, 255, 255, 0.6);
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
       border-radius: 20px;
-      display: flex;
-      align-items: flex-start;
-      .chain_icon {
-        width: 3rem;
-        margin-right: 10px;
-      }
-      .ctx {
+      padding: 2px;
+      border: 2px solid transparent;
+      box-sizing: margin-box;
+      .inner {
+        margin: 0.5rem 1rem;
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
-        .ctx_title {
-          font-family: "PingFang SC";
-          font-weight: 700;
-          font-size: 1.5rem;
-          line-height: 2;
-          color: #111432;
+        .chain_icon {
+          width: 3rem;
+          margin-right: 10px;
         }
-        .ctx_des {
-          font-family: "PingFang SC";
-          font-weight: 500;
-          font-size: 0.8rem;
-          line-height: 1.5;
-          margin-top: 6px;
-          margin-bottom: 12px;
-          color: #7b8192;
-        }
-        .ctx_arrow {
-          width: 1.3rem;
-          img {
-            width: 100%;
+        .ctx {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          .ctx_title {
+            font-family: "PingFang SC";
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 2;
+            color: #111432;
+          }
+          .ctx_des {
+            font-family: "PingFang SC";
+            font-weight: 500;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            color: #7b8192;
+          }
+          .ctx_arrow {
+            width: 1.3rem;
+            img {
+              width: 100%;
+            }
           }
         }
       }
