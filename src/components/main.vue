@@ -49,6 +49,7 @@ export default {
 .main_box {
   width: 100%;
   margin-left: 1rem;
+  margin-bottom: 4rem;
   .title {
     font-size: 1.8rem;
     font-weight: bold;

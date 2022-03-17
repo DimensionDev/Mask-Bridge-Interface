@@ -40,6 +40,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
   .left {
     display: flex;
     flex-direction: column;
@@ -86,7 +87,7 @@ export default {
   }
   .right {
     .right_img {
-      width: 32rem;
+      width: 30rem;
     }
   }
 }

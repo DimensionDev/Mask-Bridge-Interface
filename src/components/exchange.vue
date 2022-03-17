@@ -37,6 +37,7 @@ export default {
 .ex_box {
   width: 100%;
   margin-left: 1rem;
+  margin-bottom: 5.5rem;
   .title {
     font-size: 1.8rem;
     font-weight: bold;

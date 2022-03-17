@@ -50,10 +50,10 @@ export default {
   font-family: "PingFang SC";
   line-height: 1.5;
   .up {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
   }
   .bottom {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.7;
   }
 }
