@@ -98,6 +98,9 @@ export default {
 }
 @media screen and(max-width: 540px) {
   .ex_box {
+    .title{
+      margin-bottom: 28px;
+    }
     .ex_items {
       .item {
         filter: none;

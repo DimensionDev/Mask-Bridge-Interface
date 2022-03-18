@@ -1,4 +1,5 @@
 <template>
+  <div class="title">Community</div>
   <div class="footer_box">
     <div class="left">
       <div class="up">© 2022 Mask Network</div>
@@ -81,6 +82,13 @@ export default {
 };
 </script>
 <style lang='less' scoped>
+.title {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1.5rem;
+}
 .footer_box {
   width: 100%;
   display: flex;
@@ -113,7 +121,23 @@ export default {
     cursor: pointer;
   }
 }
-@media screen and(max-width: 540px) {
-  
+@media screen and(max-width: 500px) {
+  .title{
+    display: block;
+    margin-bottom: 28px;
+  }
+  .footer_box {
+    flex-direction: column-reverse;
+    .left{
+      place-self: center;
+      text-align: center;
+    }
+    .right{
+      margin-bottom: 50px;
+      .icon{
+        opacity: 1;
+      }
+    }
+  }
 }
 </style>
