@@ -39,6 +39,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
+  @media screen and (max-width: 540px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .left {
     display: flex;
     flex-direction: column;
@@ -58,6 +62,7 @@ export default {
         letter-spacing: 0.125em;
         color: #1c68f3;
       }
+
       .title_bg {
         width: fit-content;
         position: relative;
@@ -75,16 +80,35 @@ export default {
           color: #ffffff;
         }
       }
+
+      .title_sub {
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+      }
     }
-    .title_sub {
-      color: black;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.5;
+    @media screen and (max-width: 540px) {
+      .left {
+        display: flex;
+        align-items: center;
+        .title_bg {
+          margin: 0;
+        }
+        .title_md {
+          margin-bottom: 1rem;
+        }
+        .title_sub{
+          display: none;
+        }
+      }
     }
   }
   .right {
     .right_img {
+      @media screen and (max-width: 540px) {
+        width: 90vmin;
+      }
       width: 30rem;
     }
   }

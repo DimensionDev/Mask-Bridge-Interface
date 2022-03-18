@@ -9,7 +9,7 @@ import Shader2d from "../assets/canvas/shader2d";
 import circleVert from "../assets/canvas/circleVert.vert";
 import circleFrag from "../assets/canvas/circleFrag.frag";
 export default {
-  name: "canvas",
+  name: "bg_canvas",
   setup() {
     const cRef = ref(null);
     onMounted(() => {

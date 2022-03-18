@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "header",
+  name: "g_header",
   setup() {},
 };
 </script>
@@ -17,4 +17,11 @@ export default {
     width: 7rem;
   }
 }
-</style>、
+@media screen and (max-width: 1024px) {
+  .header_box {
+  .logo {
+    width: 103px;
+  }
+}
+}
+</style>

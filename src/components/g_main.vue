@@ -32,7 +32,7 @@
 <script >
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
 export default {
-  name: "main",
+  name: "g_main",
   setup() {
     const data = reactive({
       mainItems: [

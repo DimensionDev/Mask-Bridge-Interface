@@ -20,7 +20,7 @@
 <script>
 import { reactive, toRefs } from "vue";
 export default {
-  name: "footer",
+  name: "g_footer",
   setup() {
     const data = reactive({
       socialMediaBox: [

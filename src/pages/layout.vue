@@ -1,34 +1,34 @@
 <template>
   <div class="box">
-    <CanvasBg class="cvx" />
+    <BgCanvas class="cvx" />
     <div class="container">
       <div class="layout">
-        <BridgeHeader />
+        <Gheader />
         <Hero />
-        <Main />
+        <Gmain />
         <Exchange />
-        <Footer />
+        <Gfooter />
       </div>
     </div>
   </div>
 </template>
 
 <script >
-import BridgeHeader from "../components/header.vue";
+import Gheader from "../components/g_header.vue";
 import Hero from "../components/hero.vue";
-import Main from "../components/main.vue";
+import Gmain from "../components/g_main.vue";
 import Exchange from "../components/exchange.vue";
-import Footer from "../components/footer.vue";
-import CanvasBg from "../components/canvas.vue";
+import Gfooter from "../components/g_footer.vue";
+import BgCanvas from "../components/bg_canvas.vue";
 export default {
   name: "layout",
   components: {
-    BridgeHeader,
+    Gheader,
     Hero,
-    Main,
+    Gmain,
     Exchange,
-    Footer,
-    CanvasBg,
+    Gfooter,
+    BgCanvas,
   },
 };
 </script>
@@ -53,7 +53,13 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
-  .layout{
+  .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @media screen and(max-width: 1024px) {
+      width: 95%;
+    }
     width: 75rem;
     margin: auto;
   }
