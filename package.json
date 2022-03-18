@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "rm -rf node_modules/.cache && vite build && echo \"bridge.mask.io\" > out/CNAME  && git add out/ && git commit -m \"Deploy Vite to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "vue": "^3.2.25"
