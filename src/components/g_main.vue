@@ -65,7 +65,7 @@ export default {
   margin-left: 1rem;
   margin-bottom: 4rem;
   @media screen and(max-width: 500px) {
-    margin-left: 0
+    margin-left: 0;
   }
   .title {
     @media screen and(max-width: 500px) {
@@ -79,7 +79,6 @@ export default {
   .main_ctx {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
     .item {
       text-decoration: none;
@@ -144,13 +143,16 @@ export default {
       }
     }
     @media screen and (max-width: 1024px) {
-      .item{
+      .item {
         height: 15rem;
       }
     }
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
     @media screen and (max-width: 540px) {
       flex-direction: column;
-      .item{
+      .item {
         background-image: linear-gradient(#fff, #fff),
           linear-gradient(94.88deg, #27ffd9 1.96%, #4048ff 100%);
         padding: 2px;
@@ -159,8 +161,8 @@ export default {
       }
     }
     @media screen and (max-width: 500px) {
-      .item{
-        width:  95%;
+      .item {
+        width: 95%;
       }
     }
   }
