@@ -81,6 +81,7 @@ export default {
     align-items: center;
     gap: 2rem;
     .item {
+      height: 20vmin;
       text-decoration: none;
       &:hover {
         background-image: linear-gradient(#fff, #fff),
@@ -144,6 +145,7 @@ export default {
     }
     @media screen and (max-width: 1024px) {
       .item {
+        height: unset;
         min-height: 15rem;
       }
     }

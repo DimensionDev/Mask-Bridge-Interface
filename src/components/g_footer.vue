@@ -101,7 +101,7 @@ export default {
   font-family: "PingFang SC";
   line-height: 1.5;
   .up {
-    margin-bottom: 0.5rem;
+    margin-bottom: 6px;
   }
   .bottom {
     font-size: 0.8rem;
