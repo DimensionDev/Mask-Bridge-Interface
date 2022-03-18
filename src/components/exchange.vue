@@ -15,29 +15,56 @@
   </div>
 </template>
 
-<script lang='js'>
-import { reactive,toRefs,onBeforeMount,onMounted} from 'vue'
+<script>
+import { reactive, toRefs } from "vue";
 export default {
-    name: 'exchange',
-      setup() {
-          const data = reactive({
-            map:[
-              {key:0, icon:new URL('../assets/exchanges/biance.svg',import.meta.url), link:'https://www.binance.com/'},
-              {key:1, icon:new URL('../assets/exchanges/huobi.svg',import.meta.url), link:'https://www.huobi.com/'},
-              {key:2, icon:new URL('../assets/exchanges/okx.svg',import.meta.url), link:'https://www.okx.com/'},
-              {key:3, icon:new URL('../assets/exchanges/upbit.svg',import.meta.url), link:'https://upbit.com/'},
-              {key:4, icon:new URL('../assets/exchanges/coinbase.svg',import.meta.url), link:'https://www.coinbase.com/'},
-              {key:5, icon:new URL('../assets/exchanges/kucoin.svg',import.meta.url), link:'https://www.kucoin.com/'},
-              {key:6, icon:new URL('../assets/exchanges/gate.svg',import.meta.url), link:'https://www.gate.io/'}
-            ]
-          })
-          const refData = toRefs(data);
-          return {
-              ...refData,
-          }
-
-      }
-  };
+  name: "exchange",
+  setup() {
+    const data = reactive({
+      map: [
+        {
+          key: 0,
+          icon: new URL("../assets/exchanges/biance.svg", import.meta.url),
+          link: "https://www.binance.com/",
+        },
+        {
+          key: 1,
+          icon: new URL("../assets/exchanges/huobi.svg", import.meta.url),
+          link: "https://www.huobi.com/",
+        },
+        {
+          key: 2,
+          icon: new URL("../assets/exchanges/okx.svg", import.meta.url),
+          link: "https://www.okx.com/",
+        },
+        {
+          key: 3,
+          icon: new URL("../assets/exchanges/upbit.svg", import.meta.url),
+          link: "https://upbit.com/",
+        },
+        {
+          key: 4,
+          icon: new URL("../assets/exchanges/coinbase.svg", import.meta.url),
+          link: "https://www.coinbase.com/",
+        },
+        {
+          key: 5,
+          icon: new URL("../assets/exchanges/kucoin.svg", import.meta.url),
+          link: "https://www.kucoin.com/",
+        },
+        {
+          key: 6,
+          icon: new URL("../assets/exchanges/gate.svg", import.meta.url),
+          link: "https://www.gate.io/",
+        },
+      ],
+    });
+    const refData = toRefs(data);
+    return {
+      ...refData,
+    };
+  },
+};
 </script>
 <style lang='less' scoped>
 .ex_box {

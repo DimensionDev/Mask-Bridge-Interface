@@ -5,7 +5,7 @@
       <div class="title_md_box">
         <div class="title_md">CROSS-CHAIN</div>
         <div class="title_bg">
-            <img src="../assets/btn_bg.png" alt="">
+          <img src="../assets/btn_bg.png" alt="" />
           <div class="text">BRIDGES</div>
         </div>
       </div>
@@ -18,13 +18,11 @@
 </template>
 
 <script >
-import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
+import { reactive, toRefs } from "vue";
 export default {
   name: "hero",
   setup() {
     const data = reactive({});
-    onBeforeMount(() => {});
-    onMounted(() => {});
     const refData = toRefs(data);
     return {
       ...refData,
@@ -61,17 +59,17 @@ export default {
         color: #1c68f3;
       }
       .title_bg {
-          width: fit-content;
+        width: fit-content;
         position: relative;
         margin-bottom: 1rem;
-        img{
-            width: 21.5rem;
+        img {
+          width: 21.5rem;
         }
         .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           font-size: 3rem;
           letter-spacing: 0.085em;
           color: #ffffff;
