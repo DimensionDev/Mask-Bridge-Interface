@@ -76,7 +76,8 @@ export default {
   .main_ctx {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 2rem;
     .item {
       text-decoration: none;
       &:hover {

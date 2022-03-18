@@ -80,6 +80,7 @@ export default {
   .ex_items {
     display: flex;
     align-items: center;
+    flex-wrap:  wrap;
     gap: 3rem;
     .item {
       text-decoration: none;
@@ -88,11 +89,26 @@ export default {
       }
       cursor: pointer;
       filter: grayscale(100);
-      height: 1.7rem;
+      height: 32px;
       img {
         height: 100%;
       }
     }
+  }
+}
+@media screen and(max-width: 540px) {
+  .ex_box{
+    .ex_items{
+      .item{
+        filter: none;
+      }
+    }
+  }
+}
+@media screen and(max-width: 500px) {
+  .ex_box{
+    margin-left: 0;
+    
   }
 }
 </style>
