@@ -144,7 +144,7 @@ export default {
     }
     @media screen and (max-width: 1024px) {
       .item {
-        height: 15rem;
+        min-height: 15rem;
       }
     }
     @media screen and (max-width: 768px) {
@@ -153,6 +153,7 @@ export default {
     @media screen and (max-width: 540px) {
       flex-direction: column;
       .item {
+        width: 90vmin;
         background-image: linear-gradient(#fff, #fff),
           linear-gradient(94.88deg, #27ffd9 1.96%, #4048ff 100%);
         padding: 2px;

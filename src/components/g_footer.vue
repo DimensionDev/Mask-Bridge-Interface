@@ -131,6 +131,7 @@ export default {
     .left{
       place-self: center;
       text-align: center;
+      margin-bottom: 36px;
     }
     .right{
       margin-bottom: 50px;
