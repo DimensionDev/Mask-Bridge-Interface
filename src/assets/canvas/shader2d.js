@@ -134,7 +134,7 @@ export default class Shader2d {
     this.render()
   }
 
-  resize(width = window.innerWidth, height = window.innerHeight) {
+  resize(width = window.innerHeight, height = window.innerWidth) {
 
     this.gl.canvas.width = width
     this.gl.canvas.height = height
