@@ -34,6 +34,12 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: url("../assets/bg.png") no-repeat;
+  background-size: 100% 100%;
+  @media screen and (max-width: 540px) {
+    background: url("../assets/mb_bg.png") no-repeat;
+    background-size: 100% 100%;
+  }
 }
 .cvx {
   position: fixed;
@@ -46,16 +52,10 @@ export default {
 .container {
   position: relative;
   width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
-  background: url("../assets/bg.png") no-repeat;
-  background-size: 100% 100%;
-  @media screen and (max-width: 540px) {
-    background: url("../assets/mb_bg.png") no-repeat;
-    background-size: 100% 100%;
-  }
   .layout {
     display: flex;
     flex-direction: column;
