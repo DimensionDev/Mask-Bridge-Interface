@@ -5,9 +5,14 @@
       <div class="bottom">All Rights Reserved</div>
     </div>
     <div class="right">
-      <div class="icon" v-for="item in socialMediaBox" :key="item.key">
-        <img :src="item.icon" alt="" />
-      </div>
+      <a
+        class="icon"
+        v-for="item in socialMediaBox"
+        :key="item.key"
+        @click="(e) => handleClick(e, item)"
+      >
+        <img :src="item.icon" />
+      </a>
     </div>
   </div>
 </template>
@@ -22,37 +27,37 @@ export default {
         {
           key: 0,
           icon: new URL("../assets/media/twitter.svg", import.meta.url),
-          link: "",
+          link: "https://twitter.com/realMaskNetwork",
         },
         {
           key: 1,
           icon: new URL("../assets/media/Telegram.svg", import.meta.url),
-          link: "",
+          link: "https://t.me/maskbook_group#telegram",
         },
         {
           key: 2,
           icon: new URL("../assets/media/Negative.svg", import.meta.url),
-          link: "",
+          link: "https://discord.com/invite/4SVXvj7",
         },
         {
           key: 3,
           icon: new URL("../assets/media/facebook.svg", import.meta.url),
-          link: "",
+          link: "https://www.facebook.com/masknetwork",
         },
         {
           key: 4,
           icon: new URL("../assets/media/reddit.svg", import.meta.url),
-          link: "",
+          link: "https://www.reddit.com/r/MaskNetwork/",
         },
         {
           key: 5,
           icon: new URL("../assets/media/github.svg", import.meta.url),
-          link: "",
+          link: "https://github.com/DimensionDev",
         },
         {
           key: 6,
           icon: new URL("../assets/media/Youtube.svg", import.meta.url),
-          link: "",
+          link: "https://www.youtube.com/c/MaskNetwork",
         },
         {
           key: 7,
@@ -61,9 +66,16 @@ export default {
         },
       ],
     });
+    const handleClick = (e, item) => {
+      e.preventDefault();
+      if (item.link) {
+        window.open(item.link, "_blank");
+      }
+    };
     const refData = toRefs(data);
     return {
       ...refData,
+      handleClick,
     };
   },
 };
@@ -93,6 +105,7 @@ export default {
   align-items: center;
   gap: 1.5rem;
   .icon {
+    text-decoration: none;
     &:hover {
       opacity: 1;
     }

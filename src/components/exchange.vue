@@ -1,10 +1,16 @@
 <template>
   <div class="ex_box">
     <div class="title">Exchanges</div>
-    <div class="ex_items" >
-      <div class="item" v-for="item in map" :key="item.key" >
-        <img :src="item.icon">
-      </div>
+    <div class="ex_items">
+      <a
+        class="item"
+        v-for="item in map"
+        :key="item.key"
+        :href="item.link"
+        target="_blank"
+      >
+        <img :src="item.icon" />
+      </a>
     </div>
   </div>
 </template>
@@ -16,13 +22,13 @@ export default {
       setup() {
           const data = reactive({
             map:[
-              {key:0, icon:new URL('../assets/exchanges/biance.svg',import.meta.url),link:''},
-              {key:1, icon:new URL('../assets/exchanges/huobi.svg',import.meta.url),link:''},
-              {key:2, icon:new URL('../assets/exchanges/okx.svg',import.meta.url),link:''},
-              {key:3, icon:new URL('../assets/exchanges/upbit.svg',import.meta.url),link:''},
-              {key:4, icon:new URL('../assets/exchanges/coinbase.svg',import.meta.url),link:''},
-              {key:5, icon:new URL('../assets/exchanges/kucoin.svg',import.meta.url),link:''},
-              {key:6, icon:new URL('../assets/exchanges/gate.svg',import.meta.url),link:''}
+              {key:0, icon:new URL('../assets/exchanges/biance.svg',import.meta.url), link:'https://www.binance.com/'},
+              {key:1, icon:new URL('../assets/exchanges/huobi.svg',import.meta.url), link:'https://www.huobi.com/'},
+              {key:2, icon:new URL('../assets/exchanges/okx.svg',import.meta.url), link:'https://www.okx.com/'},
+              {key:3, icon:new URL('../assets/exchanges/upbit.svg',import.meta.url), link:'https://upbit.com/'},
+              {key:4, icon:new URL('../assets/exchanges/coinbase.svg',import.meta.url), link:'https://www.coinbase.com/'},
+              {key:5, icon:new URL('../assets/exchanges/kucoin.svg',import.meta.url), link:'https://www.kucoin.com/'},
+              {key:6, icon:new URL('../assets/exchanges/gate.svg',import.meta.url), link:'https://www.gate.io/'}
             ]
           })
           const refData = toRefs(data);
@@ -44,18 +50,19 @@ export default {
     color: black;
     margin-bottom: 1.5rem;
   }
-  .ex_items{
+  .ex_items {
     display: flex;
     align-items: center;
     gap: 3rem;
-    .item{
-      &:hover{
+    .item {
+      text-decoration: none;
+      &:hover {
         filter: none;
       }
       cursor: pointer;
       filter: grayscale(100);
       height: 1.7rem;
-      img{
+      img {
         height: 100%;
       }
     }

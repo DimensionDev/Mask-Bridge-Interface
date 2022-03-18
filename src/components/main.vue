@@ -2,7 +2,13 @@
   <div class="main_box">
     <div class="title">Cross-chain services</div>
     <div class="main_ctx">
-      <div class="item" v-for="item in mainItems" :key="item.key">
+      <a
+        class="item"
+        v-for="item in mainItems"
+        :key="item.key"
+        :href="item.link"
+        target="_blank"
+      >
         <div class="inner">
           <img class="chain_icon" :src="item.icon" alt="" />
           <div class="ctx">
@@ -18,7 +24,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -34,11 +40,13 @@ export default {
           key: 0,
           icon: new URL("../assets/item0.svg", import.meta.url),
           des: "To bridge between ETH and Polygon Chain, click to go to Polygon Bridge.",
+          link: "https://wallet.polygon.technology/",
         },
         {
           key: 1,
           icon: new URL("../assets/item1.svg", import.meta.url),
           des: "To bridge between ETH, BNB Chain, Polygon, Avalanche, etc., click to go to cBridge.",
+          link: "https://cbridge.celer.network/",
         },
       ],
     });
@@ -67,6 +75,7 @@ export default {
     align-items: center;
     gap: 1.5rem;
     .item {
+      text-decoration: none;
       &:hover {
         background-image: linear-gradient(#fff, #fff),
           linear-gradient(94.88deg, #27ffd9 1.96%, #4048ff 100%);
@@ -105,7 +114,7 @@ export default {
             display: flex;
             align-items: center;
             gap: 1rem;
-            img{
+            img {
               width: 1.5rem;
             }
           }
