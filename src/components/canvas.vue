@@ -47,10 +47,10 @@ export default {
       }
       handleResize(shader);
       ticker.on(onTick);
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", () => handleResize(shader));
     });
     const handleResize = (shader) => {
-      shader.resize(window.innerWidth, window.innerHeight);
+      shader.resize(document.documentElement.clientWidth, document.documentElement.clientHeight);
     };
     onBeforeUnmount(() => {
       window.removeEventListener("resize", handleResize);

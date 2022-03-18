@@ -6,7 +6,11 @@
         <div class="inner">
           <img class="chain_icon" :src="item.icon" alt="" />
           <div class="ctx">
-            <div v-if="item.key == 0" class="ctx_title">ETH Polygon</div>
+            <div v-if="item.key == 0" class="ctx_title">
+              ETH
+              <img class="arrow" src="../assets/item0_arrow.svg" alt="" />
+              Polygon
+            </div>
             <div v-else class="ctx_title">cBridge Multichain Services</div>
             <div class="ctx_des">{{ item.des }}</div>
             <div class="ctx_arrow">
@@ -98,6 +102,12 @@ export default {
             font-size: 1.5rem;
             line-height: 2;
             color: #111432;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+              width: 1.5rem;
+            }
           }
           .ctx_des {
             font-family: "PingFang SC";
