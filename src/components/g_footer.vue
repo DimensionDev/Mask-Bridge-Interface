@@ -113,4 +113,7 @@ export default {
     cursor: pointer;
   }
 }
+@media screen and(max-width: 540px) {
+  
+}
 </style>

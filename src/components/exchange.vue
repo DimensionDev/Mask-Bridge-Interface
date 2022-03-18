@@ -80,7 +80,7 @@ export default {
   .ex_items {
     display: flex;
     align-items: center;
-    flex-wrap:  wrap;
+    flex-wrap: wrap;
     gap: 3rem;
     .item {
       text-decoration: none;
@@ -97,18 +97,18 @@ export default {
   }
 }
 @media screen and(max-width: 540px) {
-  .ex_box{
-    .ex_items{
-      .item{
+  .ex_box {
+    .ex_items {
+      .item {
         filter: none;
+        height: 24px;
       }
     }
   }
 }
 @media screen and(max-width: 500px) {
-  .ex_box{
+  .ex_box {
     margin-left: 0;
-    
   }
 }
 </style>

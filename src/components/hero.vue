@@ -122,6 +122,7 @@ export default {
     .right_img {
       @media screen and (max-width: 500px) {
         width: 80vmin;
+        min-width: 300px;
       }
       width: 30rem;
     }
