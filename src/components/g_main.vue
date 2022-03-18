@@ -64,6 +64,9 @@ export default {
   width: 100%;
   margin-left: 1rem;
   margin-bottom: 4rem;
+  @media screen and(max-width: 500px) {
+    margin-left: 0
+  }
   .title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -134,6 +137,26 @@ export default {
             }
           }
         }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .item{
+        height: 15rem;
+      }
+    }
+    @media screen and (max-width: 540px) {
+      flex-direction: column;
+      .item{
+        background-image: linear-gradient(#fff, #fff),
+          linear-gradient(94.88deg, #27ffd9 1.96%, #4048ff 100%);
+        padding: 2px;
+        background-clip: content-box, padding-box;
+        transition: filter 0.5s ease;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .item{
+        width:  95%;
       }
     }
   }

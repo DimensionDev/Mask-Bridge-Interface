@@ -40,6 +40,7 @@ export default {
   justify-content: space-between;
   margin-bottom: 1.5rem;
   @media screen and (max-width: 500px) {
+    padding: 0;
     flex-direction: column;
     align-items: flex-start;
   }
