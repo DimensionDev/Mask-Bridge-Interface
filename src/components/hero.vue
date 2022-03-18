@@ -39,7 +39,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 500px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -55,18 +55,19 @@ export default {
       margin-bottom: 1rem;
     }
     .title_md_box {
+      font-size: 3rem;
       .title_md {
         font-weight: 700;
-        font-size: 3rem;
         line-height: 1.3;
         letter-spacing: 0.125em;
         color: #1c68f3;
       }
-
       .title_bg {
         width: fit-content;
         position: relative;
         margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
         img {
           width: 21.5rem;
         }
@@ -75,12 +76,13 @@ export default {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 3rem;
           letter-spacing: 0.085em;
           color: #ffffff;
+          display: flex;
+          align-items: center;
+          text-align: center;
         }
       }
-
       .title_sub {
         color: black;
         font-size: 1rem;
@@ -88,26 +90,37 @@ export default {
         line-height: 1.5;
       }
     }
-    @media screen and (max-width: 540px) {
-      .left {
+    @media screen and (max-width: 500px) {
+      margin-bottom: 3rem;
+      .title_md_box {
         display: flex;
         align-items: center;
+        font-size: 2.5rem;
         .title_bg {
+          width: 50%;
           margin: 0;
+          img {
+            width: 100%;
+          }
         }
         .title_md {
-          margin-bottom: 1rem;
+          white-space: nowrap;
         }
-        .title_sub{
-          display: none;
-        }
+      }
+      .title_sub {
+        display: none;
+      }
+    }
+    @media screen and(max-width: 400px) {
+      .title_md_box {
+        font-size: 2rem;
       }
     }
   }
   .right {
     .right_img {
-      @media screen and (max-width: 540px) {
-        width: 90vmin;
+      @media screen and (max-width: 500px) {
+        width: 80vmin;
       }
       width: 30rem;
     }
