@@ -1,6 +1,5 @@
 <template>
   <div class="box">
-    <BgCanvas class="cvx" />
     <div class="container">
       <div class="layout">
         <Gheader />
@@ -19,7 +18,6 @@ import Hero from "../components/hero.vue";
 import Gmain from "../components/g_main.vue";
 import Exchange from "../components/exchange.vue";
 import Gfooter from "../components/g_footer.vue";
-import BgCanvas from "../components/bg_canvas.vue";
 export default {
   name: "layout",
   components: {
@@ -28,7 +26,6 @@ export default {
     Gmain,
     Exchange,
     Gfooter,
-    BgCanvas,
   },
 };
 </script>
@@ -53,10 +50,10 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
-  background: url('../assets/bg.png') no-repeat;
+  background: url("../assets/bg.png") no-repeat;
   background-size: 100% 100%;
   @media screen and (max-width: 540px) {
-    background: url('../assets/mb_bg.png') no-repeat;
+    background: url("../assets/mb_bg.png") no-repeat;
     background-size: 100% 100%;
   }
   .layout {
