@@ -60,11 +60,11 @@ export default {
           icon: new URL("../assets/media/Youtube.svg", import.meta.url),
           link: "https://www.youtube.com/c/MaskNetwork",
         },
-        {
-          key: 7,
-          icon: new URL("../assets/media/Medium.svg", import.meta.url),
-          link: "",
-        },
+        // {
+        //   key: 7,
+        //   icon: new URL("../assets/media/Medium.svg", import.meta.url),
+        //   link: "",
+        // },
       ],
     });
     const handleClick = (e, item) => {

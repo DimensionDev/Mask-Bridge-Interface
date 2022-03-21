@@ -88,7 +88,7 @@ export default {
         filter: none;
       }
       cursor: pointer;
-      filter: grayscale(100);
+      filter: grayscale(100%) opacity(.6);
       height: 32px;
       img {
         height: 100%;
@@ -98,7 +98,7 @@ export default {
 }
 @media screen and(max-width: 540px) {
   .ex_box {
-    .title{
+    .title {
       margin-bottom: 28px;
     }
     .ex_items {
