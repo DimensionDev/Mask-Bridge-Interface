@@ -165,7 +165,19 @@ export default {
     @media screen and (max-width: 500px) {
       .item {
         width: 95%;
+        .inner{
+          margin: 2rem;
+          .ctx{
+            .ctx_title{
+              font-size: 16px;
+            }
+          }
+          .chain_icon{
+          width: 5rem;
+        }
+        }
       }
+      
     }
   }
 }

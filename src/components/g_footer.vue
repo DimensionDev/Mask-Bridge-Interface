@@ -111,7 +111,7 @@ export default {
 .right {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   .icon {
     text-decoration: none;
     &:hover {
@@ -135,6 +135,7 @@ export default {
     }
     .right{
       margin-bottom: 50px;
+      gap: 2.5rem;
       .icon{
         opacity: 1;
       }

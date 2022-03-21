@@ -32,4 +32,9 @@ export default {
     }
   }
 }
+@media screen and(max-width: 500px) {
+  .header_box{
+    padding: 3rem 0;
+  }
+}
 </style>

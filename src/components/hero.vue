@@ -71,7 +71,7 @@ export default {
         display: flex;
         align-items: center;
         img {
-          width: 21.5rem;
+          width: 20rem;
         }
 
         .text {
@@ -105,7 +105,8 @@ export default {
       .title_md_box {
         display: flex;
         align-items: center;
-        font-size: 2.5rem;
+        justify-content: space-between;
+        font-size: 3rem;
         .title_bg {
           width: 50%;
           margin: 0;
@@ -131,6 +132,12 @@ export default {
     }
   }
   .right {
+    @media screen and(max-width: 500px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .right_img {
       @media screen and (max-width: 500px) {
         width: 80vmin;

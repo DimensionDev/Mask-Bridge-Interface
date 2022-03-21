@@ -89,7 +89,7 @@ export default {
       }
       cursor: pointer;
       filter: grayscale(100%) opacity(.6);
-      height: 32px;
+      height: 34px;
       img {
         height: 100%;
       }
@@ -102,9 +102,11 @@ export default {
       margin-bottom: 28px;
     }
     .ex_items {
+    justify-content: space-between;
+
       .item {
         filter: none;
-        height: 24px;
+        height: 28px;
       }
     }
   }
