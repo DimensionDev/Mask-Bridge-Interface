@@ -96,7 +96,6 @@ export default {
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
       border-radius: 20px;
       padding: 2px;
-      border: 2px solid transparent;
       box-sizing: margin-box;
       .inner {
         margin: 0.5rem 1rem;
@@ -151,7 +150,7 @@ export default {
     @media screen and (max-width: 768px) {
       justify-content: center;
     }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 539px) {
       flex-direction: column;
       .item {
         width: 90vmin;
@@ -165,19 +164,18 @@ export default {
     @media screen and (max-width: 500px) {
       .item {
         width: 95%;
-        .inner{
+        .inner {
           margin: 2rem;
-          .ctx{
-            .ctx_title{
+          .ctx {
+            .ctx_title {
               font-size: 16px;
             }
           }
-          .chain_icon{
-          width: 5rem;
-        }
+          .chain_icon {
+            width: 5rem;
+          }
         }
       }
-      
     }
   }
 }
