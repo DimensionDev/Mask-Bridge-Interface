@@ -7,6 +7,7 @@
         <div class="title_bg">
           <img src="../assets/btn_bg.png" alt="" />
           <div class="text">BRIDGES</div>
+          <img class="badge" src="../assets/badge_bottom.svg" alt="">
         </div>
       </div>
       <div class="title_sub">Using services provided below</div>
@@ -72,6 +73,7 @@ export default {
         img {
           width: 21.5rem;
         }
+
         .text {
           position: absolute;
           top: 50%;
@@ -82,6 +84,13 @@ export default {
           display: flex;
           align-items: center;
           text-align: center;
+        }
+        .badge{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 10rem;
+          transform: translate(60%,35%);
         }
       }
       .title_sub {
@@ -102,6 +111,9 @@ export default {
           margin: 0;
           img {
             width: 100%;
+          }
+          .badge{
+            display: none;
           }
         }
         .title_md {

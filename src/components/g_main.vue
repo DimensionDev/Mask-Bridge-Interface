@@ -81,7 +81,6 @@ export default {
     align-items: center;
     gap: 2rem;
     .item {
-      height: 20vmin;
       text-decoration: none;
       &:hover {
         background-image: linear-gradient(#fff, #fff),
