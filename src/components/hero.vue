@@ -102,6 +102,9 @@ export default {
     }
     @media screen and (max-width: 500px) {
       margin-bottom: 3rem;
+      .title_xs{
+        font-size: 1.5rem;
+      }
       .title_md_box {
         display: flex;
         align-items: center;
@@ -127,7 +130,7 @@ export default {
     }
     @media screen and(max-width: 400px) {
       .title_md_box {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
   }
