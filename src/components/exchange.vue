@@ -121,7 +121,6 @@ export default {
     }
     .ex_items {
       justify-content: space-between;
-
       .item {
         .pc {
           display: none;
