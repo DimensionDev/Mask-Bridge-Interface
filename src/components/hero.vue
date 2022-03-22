@@ -39,7 +39,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   @media screen and (max-width: 500px) {
     padding-left: 0;
     flex-direction: column;
