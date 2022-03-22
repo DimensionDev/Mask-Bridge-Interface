@@ -121,22 +121,25 @@ export default {
     cursor: pointer;
   }
 }
-@media screen and(max-width: 500px) {
-  .title{
+@media screen and (max-width: 540px) {
+  .title {
     display: block;
-    margin-bottom: 28px;
+    font-size: 20px;
+    margin-bottom: 16px;
   }
+}
+@media screen and(max-width: 500px) {
   .footer_box {
     flex-direction: column-reverse;
-    .left{
+    .left {
       place-self: center;
       text-align: center;
       margin-bottom: 36px;
     }
-    .right{
+    .right {
       margin-bottom: 50px;
       gap: 2.5rem;
-      .icon{
+      .icon {
         opacity: 1;
       }
     }

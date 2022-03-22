@@ -68,8 +68,9 @@ export default {
     margin-left: 0;
   }
   .title {
-    @media screen and(max-width: 500px) {
-      margin-bottom: 20px;
+    @media screen and(max-width: 540px) {
+      font-size: 20px;
+      margin-bottom: 16px;
     }
     font-size: 1.8rem;
     font-weight: bold;

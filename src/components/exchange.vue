@@ -116,7 +116,8 @@ export default {
 @media screen and(max-width: 540px) {
   .ex_box {
     .title {
-      margin-bottom: 28px;
+      font-size: 20px;
+      margin-bottom: 16px;
     }
     .ex_items {
       justify-content: space-between;
