@@ -9,7 +9,8 @@
         :href="item.link"
         target="_blank"
       >
-        <img :src="item.icon" />
+        <img class="pc" :src="item.micon" />
+        <img class="mobile" :src="item.icon" />
       </a>
     </div>
   </div>
@@ -25,36 +26,43 @@ export default {
         {
           key: 0,
           icon: new URL("../assets/exchanges/biance.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/Binance.svg", import.meta.url),
           link: "https://www.binance.com/",
         },
         {
           key: 1,
           icon: new URL("../assets/exchanges/huobi.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/huobi.svg", import.meta.url),
           link: "https://www.huobi.com/",
         },
         {
           key: 2,
           icon: new URL("../assets/exchanges/okx.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/okx.svg", import.meta.url),
           link: "https://www.okx.com/",
         },
         {
           key: 3,
           icon: new URL("../assets/exchanges/upbit.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/upbit.svg", import.meta.url),
           link: "https://upbit.com/",
         },
         {
           key: 4,
           icon: new URL("../assets/exchanges/coinbase.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/Coinbase.svg", import.meta.url),
           link: "https://www.coinbase.com/",
         },
         {
           key: 5,
           icon: new URL("../assets/exchanges/kucoin.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/kucoin.svg", import.meta.url),
           link: "https://www.kucoin.com/",
         },
         {
           key: 6,
           icon: new URL("../assets/exchanges/gate.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/gate.svg", import.meta.url),
           link: "https://www.gate.io/",
         },
       ],
@@ -83,15 +91,24 @@ export default {
     flex-wrap: wrap;
     gap: 3rem;
     .item {
+      cursor: pointer;
+      height: 34px;
+      .pc {
+        display: block;
+        height: 100%;
+      }
+      .mobile {
+        display: none;
+      }
       text-decoration: none;
       &:hover {
-        filter: none;
-      }
-      cursor: pointer;
-      filter: grayscale(100%) opacity(.6);
-      height: 34px;
-      img {
-        height: 100%;
+        .mobile {
+          display: block;
+          height: 100%;
+        }
+        .pc {
+          display: none;
+        }
       }
     }
   }
@@ -102,10 +119,16 @@ export default {
       margin-bottom: 28px;
     }
     .ex_items {
-    justify-content: space-between;
+      justify-content: space-between;
 
       .item {
-        filter: none;
+        .pc {
+          display: none;
+        }
+        .mobile {
+          display: block;
+          height: 100%;
+        }
         height: 28px;
       }
     }

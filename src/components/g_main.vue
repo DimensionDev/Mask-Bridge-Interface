@@ -69,7 +69,7 @@ export default {
   }
   .title {
     @media screen and(max-width: 500px) {
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
     font-size: 1.8rem;
     font-weight: bold;
@@ -163,7 +163,7 @@ export default {
     }
     @media screen and (max-width: 500px) {
       .item {
-        width: 95%;
+        width: 100%;
         .inner {
           margin: 2rem;
           .ctx {
