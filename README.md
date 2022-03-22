@@ -1,12 +1,8 @@
-# Mask Bridge
-## Mask Token CROSS-CHAIN Bridges
+# Mask Token CROSS-CHAIN Bridges
 
-### dev
-`yarn`  
-`yarn dev`
+## Setup
 
-### build
-`yarn build`
-
-### deploy
-`yarn deploy`
+```bash
+yarn
+yarn dev
+```
