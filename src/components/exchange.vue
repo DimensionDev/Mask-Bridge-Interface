@@ -92,7 +92,7 @@ export default {
     gap: 3rem;
     .item {
       cursor: pointer;
-      height: 34px;
+      height: 32px;
       .pc {
         display: block;
         height: 100%;

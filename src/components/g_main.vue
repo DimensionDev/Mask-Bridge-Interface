@@ -127,7 +127,6 @@ export default {
           .ctx_des {
             font-family: "PingFang SC";
             font-weight: 500;
-            font-size: 0.8rem;
             line-height: 1.5;
             margin-top: 6px;
             margin-bottom: 12px;
@@ -140,6 +139,11 @@ export default {
             }
           }
         }
+      }
+    }
+    @media screen and (max-width: 1280px) {
+      .item {
+        width: 50%;
       }
     }
     @media screen and (max-width: 1024px) {

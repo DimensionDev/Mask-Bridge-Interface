@@ -52,13 +52,14 @@ export default {
 .container {
   position: relative;
   width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
   .layout {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     @media screen and(max-width: 1024px) {
       width: 95%;
