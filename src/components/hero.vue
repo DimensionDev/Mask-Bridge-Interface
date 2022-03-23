@@ -108,7 +108,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 3rem;
+        font-size: 2.5rem;
         .title_bg {
           width: 45%;
           min-width: 150px;
@@ -128,11 +128,7 @@ export default {
         display: none;
       }
     }
-    @media screen and(max-width: 400px) {
-      .title_md_box {
-        font-size: 2.5rem;
-      }
-    }
+  
   }
   .right {
     @media screen and(max-width: 500px) {
