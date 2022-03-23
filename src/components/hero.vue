@@ -111,7 +111,7 @@ export default {
         font-size: 3rem;
         .title_bg {
           width: 45%;
-          min-width: 200px;
+          min-width: 150px;
           margin: 0;
           img {
             width: 100%;
