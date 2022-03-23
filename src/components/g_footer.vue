@@ -101,10 +101,12 @@ export default {
   font-family: "PingFang SC";
   line-height: 1.5;
   .up {
+    font-weight: 500;
     margin-bottom: 6px;
   }
   .bottom {
     font-size: 0.8rem;
+    font-weight: 400;
     opacity: 0.7;
   }
 }
