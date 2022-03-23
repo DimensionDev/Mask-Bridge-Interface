@@ -5,7 +5,8 @@
       <div class="title_md_box">
         <div class="title_md">CROSS-CHAIN</div>
         <div class="title_bg">
-          <img src="../assets/btn_bg.png" alt="" />
+          <img class="pc" src="../assets/btn_bg.png" alt="" />
+          <img class="mobile" src="../assets/m_btn.svg" alt="">
           <div class="text">BRIDGES</div>
           <img class="badge" src="../assets/badge_bottom.svg" alt="">
         </div>
@@ -70,6 +71,9 @@ export default {
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
+        .mobile{
+          display: none;
+        }
         img {
           width: 20rem;
         }
@@ -113,6 +117,12 @@ export default {
           width: 45%;
           min-width: 150px;
           margin: 0;
+          .mobile{
+            display: block;
+          }
+          .pc{
+            display: none;
+          }
           img {
             width: 100%;
           }
