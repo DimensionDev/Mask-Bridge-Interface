@@ -149,14 +149,22 @@ export default {
     @media screen and (max-width: 1024px) {
       .item {
         height: unset;
-        min-height: 15rem;
+        min-height: 12rem;
+        .inner {
+          .ctx {
+            .ctx_title {
+              font-size: 2rem;
+            }
+            .ctx_des {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
     @media screen and (max-width: 768px) {
-      justify-content: center;
-    }
-    @media screen and (max-width: 539px) {
       flex-direction: column;
+      justify-content: center;
       .item {
         width: 90vmin;
         background-image: linear-gradient(#fff, #fff),
@@ -166,6 +174,9 @@ export default {
         transition: filter 0.5s ease;
       }
     }
+    @media screen and (max-width: 539px) {
+      
+    }
     @media screen and (max-width: 500px) {
       .item {
         width: 100%;
@@ -174,6 +185,9 @@ export default {
           .ctx {
             .ctx_title {
               font-size: 16px;
+            }
+            .ctx_des {
+              font-size: 14px;
             }
           }
           .chain_icon {

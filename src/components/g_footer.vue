@@ -94,7 +94,8 @@ export default {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  box-sizing: border-box;
+  padding-bottom: 1.5rem;
 }
 .left {
   color: black;

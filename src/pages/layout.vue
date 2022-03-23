@@ -32,8 +32,10 @@ export default {
 <style lang='less' scoped>
 .box {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-bottom: 24px;
   background: url("../assets/bg.png") no-repeat;
   background-size: 100% 100%;
   @media screen and (max-width: 540px) {
@@ -52,9 +54,7 @@ export default {
 .container {
   position: relative;
   width: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
   z-index: 1;
   .layout {
     display: flex;
