@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "SF Pro";
-  src: url("./font/PingFang.ttc");
-}
-@font-face {
-  font-family: "PingFang SC";
-  src: url("./font/SF-Pro.ttf");
-}
 html {
   font-size: 1vmax;
   width: 100%;

@@ -108,7 +108,6 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         font-size: 3rem;
         .title_bg {
           width: 45%;
