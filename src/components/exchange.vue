@@ -129,7 +129,7 @@ export default {
           display: block;
           height: 100%;
         }
-        height: 28px;
+        height: 30px;
       }
     }
   }

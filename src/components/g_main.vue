@@ -39,7 +39,10 @@ export default {
         {
           key: 0,
           icon: new URL("../assets/item0.svg", import.meta.url),
-          des: "To bridge between ETH and Polygon Chain, click to go to Polygon Bridge.",
+          des:
+            "To bridge between ETH and Polygon Chain," +
+            "\n" +
+            "click to go to Polygon Bridge.",
           link: "https://wallet.polygon.technology/",
         },
         {
@@ -175,7 +178,6 @@ export default {
       }
     }
     @media screen and (max-width: 539px) {
-      
     }
     @media screen and (max-width: 500px) {
       .item {
