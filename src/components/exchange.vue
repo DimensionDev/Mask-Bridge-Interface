@@ -26,7 +26,7 @@ export default {
         {
           key: 0,
           icon: new URL("../assets/exchanges/biance.svg", import.meta.url),
-          micon: new URL("../assets/m_exchange/Binance.svg", import.meta.url),
+          micon: new URL("../assets/m_exchange/biance.svg", import.meta.url),
           link: "https://www.binance.com/",
         },
         {
