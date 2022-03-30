@@ -20,6 +20,7 @@ export default {
 <style lang='less' scoped>
 .header_box {
   padding: 1.5rem 0;
+  max-width: 1280px;
   .logo {
     cursor: pointer;
     width: 7rem;
@@ -33,7 +34,7 @@ export default {
   }
 }
 @media screen and(max-width: 500px) {
-  .header_box{
+  .header_box {
     padding: 3rem 0;
   }
 }
