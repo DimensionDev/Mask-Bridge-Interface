@@ -61,6 +61,8 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 75rem;
+    margin: auto;
     @media screen and(max-width: 1024px) {
       width: 95%;
       min-width: 280px;
@@ -68,9 +70,9 @@ export default {
     @media screen and(max-width: 500px) {
       width: 90%;
     }
-    width: 75rem;
-    max-width: 1280px;
-    margin: auto;
+    @media screen and (max-width: 2440px) {
+      width: 1920px;
+    }
   }
 }
 </style>
