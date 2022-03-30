@@ -76,7 +76,7 @@ export default {
 </script>
 <style lang='less' scoped>
 .ex_box {
-  max-width: 1280px;
+  max-width: 80%;
   width: 100%;
   margin-left: 1rem;
   margin-bottom: 5.5rem;

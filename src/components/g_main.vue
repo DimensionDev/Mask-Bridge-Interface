@@ -65,7 +65,7 @@ export default {
 <style lang='less' scoped>
 .main_box {
   max-width: 1280px;
-  width: 100%;
+  width: 80%;
   margin-left: 1rem;
   margin-bottom: 4rem;
   @media screen and(max-width: 500px) {

@@ -20,7 +20,7 @@ export default {
 <style lang='less' scoped>
 .header_box {
   padding: 1.5rem 0;
-  max-width: 1280px;
+  max-width: 80%;
   .logo {
     cursor: pointer;
     width: 7rem;
