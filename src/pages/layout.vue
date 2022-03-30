@@ -69,6 +69,7 @@ export default {
       width: 90%;
     }
     width: 75rem;
+    max-width: 1280px;
     margin: auto;
   }
 }
