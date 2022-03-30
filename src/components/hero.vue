@@ -34,7 +34,6 @@ export default {
 </script>
 <style lang='less' scoped>
 .hero_box {
-  max-width: 80%;
   width: 100%;
   padding-left: 1rem;
   box-sizing: border-box;

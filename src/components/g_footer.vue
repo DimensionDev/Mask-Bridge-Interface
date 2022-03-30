@@ -91,7 +91,6 @@ export default {
 }
 .footer_box {
   width: 100%;
-  max-width: 80%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
