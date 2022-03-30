@@ -71,7 +71,7 @@ export default {
       width: 90%;
     }
     @media screen and (max-width: 2440px) {
-      width: 1920px;
+      max-width: 1280px;
     }
   }
 }
