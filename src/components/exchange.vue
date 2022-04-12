@@ -93,9 +93,11 @@ export default {
     .item {
       cursor: pointer;
       height: 32px;
+      width: 109px;
       .pc {
         display: block;
         height: 100%;
+        width: 100%;
       }
       .mobile {
         display: none;
