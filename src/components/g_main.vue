@@ -48,7 +48,7 @@ export default {
         {
           key: 1,
           icon: new URL("../assets/item1.svg", import.meta.url),
-          des: "To bridge between ETH, BNB Chain, Polygon, Avalanche, etc., click to go to cBridge.",
+          des: "To bridge between ETH, BNB Chain. click to go to cBridge.",
           link: "https://cbridge.celer.network/",
         },
       ],
